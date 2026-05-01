@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=
+    , initial-scale=1.0"
+    />
+    <title>Web clone</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      header {
+        display: flex;
+        padding: 5px;
+        margin: 0;
+        background: rgba(59, 2, 2, 0.295);
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      nav ul {
+        display: flex;
+        align-items: flex-start;
+        padding: 5px;
+        gap: 10px;
+        list-style: none;
+      }
+
+      @media (max-width: 768px) {
+        nav ul {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 10px;
+        }
+      }
+
+      main {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+      }
+
+      section {
+        top: 10px;
+        bottom: 20px;
+      }
+
+      .products {
+        display: flex;
+        gap: 20px;
+      }
+
+      .hero {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+      }
+
+      .features {
+        display: flex;
+        gap: 20px;
+      }
+
+      @media (max-width: 768px) {
+        .products {
+          flex-direction: column;
+        }
+
+        .hero {
+          flex-direction: column;
+        }
+
+        .features {
+          flex-direction: column;
+        }
+      }
+
+      article {
+        border: 1px solid;
+        margin-bottom: 10px;
+        padding: 15px;
+        border-radius: 8px;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      button {
+        padding: 10px 20px;
+        border: none;
+        background: black;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background: #333;
+      }
+      footer {
+        margin-bottom: 10px;
+        text-align: center;
+        padding: 5px;
+        background-color: blueviolet;
+        height: 100%;
+        size: 50%;
+      }
+
+      container {
+        max-width: 1000px;
+        margin: auto;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>BeRae</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="hero container">
+        <div class="hero-text">
+          <h2 class="hero">Glasses</h2>
+          <p>kfksjfjksjfjkdkjsddjdffndkdjjfknf</p>
+          <button>Shop Now</button>
+        </div>
+
+        <figure>
+          <img src="" alt="BeRae glasses" />
+        </figure>
+      </section>
+
+      <section>
+        <h2>Features</h2>
+        <div class="features">
+          <article>
+            <h3>Colours</h3>
+            <p>fghhgghgfhgfg</p>
+          </article>
+
+          <article>
+            <h3>Shapes</h3>
+            <p>thfhjhghffg</p>
+          </article>
+
+          <article>
+            <h3>Audience</h3>
+            <p>dsfdvjfkdndkf</p>
+          </article>
+        </div>
+      </section>
+
+      <section>
+        <h2>Other products</h2>
+
+        <div class="products">
+          <h3>Bags</h3>
+          <figure>
+            <img src="" alt="Handbags" />
+            <figcaption>handbags</figcaption>
+          </figure>
+          <p>fhkdsdksccccccccc</p>
+
+          <h3>Shoes</h3>
+          <figure>
+            <img src="" alt="Shoes" />
+            <figcaption>Shoes</figcaption>
+          </figure>
+          <p>skjjdornfdhskncdhfdjk</p>
+
+          <h3>Hair products</h3>
+          <figure>
+            <img src="" alt="Hair products" />
+            <figcaption>Hair products</figcaption>
+          </figure>
+          <p>djfvndskakeuckk</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Whatsapp</p>
+      <p>Gmail</p>
+      <p>Instagram</p>
+      <p>&copy; Berae</p>
+    </footer>
+  </body>
+</html>

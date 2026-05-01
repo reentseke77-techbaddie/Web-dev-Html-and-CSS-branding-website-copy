@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Web Developer Portfolio</title>
+    <style>
+      /* Reset */
+
+      * {
+        box-sizing: border-box;
+      }
+
+      /* Global */
+
+      body {
+        font-family:
+          "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      }
+
+      /* Layout */
+      header {
+        background: blue;
+        padding: 20px;
+        margin: 0;
+        border-bottom: 40px;
+        font-size: 30px;
+      }
+
+      main {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+      }
+
+      section {
+        padding: 20px 0;
+      }
+
+      footer {
+        padding: 5px;
+        background: aqua;
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+      }
+
+      /* Components */
+
+      img {
+        display: flex;
+        align-items: end;
+      }
+
+      button {
+        padding: 10px;
+        background: rgb(32, 119, 201);
+        color: white;
+        border-radius: 2px;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+      }
+
+      article {
+        display: grid;
+        flex-direction: column;
+        border: 1px solid;
+        margin-bottom: 10px;
+        padding: 10px;
+        border-radius: 10px;
+        transition: transform 0.3s ease;
+      }
+
+      article:hover {
+        transform: translateY(-10px);
+      }
+
+      /* Utilities */
+
+      .hero {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .projects {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+
+      /* Animations */
+      @keyframes fadeIn {
+        from {
+          transform: translateY(50px);
+          opacity: 0;
+        }
+        to {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+      .hero {
+        animation: fadeIn 1s ease-out;
+      }
+
+      @media (max-width: 768px) {
+        .products {
+          flex-direction: column;
+        }
+        .hero {
+          flex-direction: column;
+        }
+
+        .footer {
+          align-items: center;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>Web Developer Portfolio</header>
+
+    <main>
+      <section>
+        <div class="hero">
+          <article>
+            <h1>Profile</h1>
+            <p>Reitumetse Ntseke</p>
+            <p>Front-end developer</p>
+            <p>
+              I am an aspring Junior Front-end developer enthusiast wanting to
+              break into tech
+            </p>
+            <figure>
+              <img src="" alt="A picture of myself" />
+            </figure>
+            <button>View my work</button>
+          </article>
+        </div>
+      </section>
+
+      <section>
+        <article>
+          <h1>About</h1>
+
+          <p>I am a Front-end developer enthusiast studying at hmmmm.</p>
+          <p>I am currently learning Javascript.</p>
+          <p>
+            My goal is to be a fullstack and software developer who solves
+            problems.
+          </p>
+        </article>
+      </section>
+
+      <section>
+        <h1>Projects</h1>
+
+        <div class="projects">
+          <article>
+            <h2>Blog layout</h2>
+            <p>A web page of a blog I created</p>
+            <button>View Project</button>
+          </article>
+
+          <article>
+            <h2>Landing page</h2>
+            <p>
+              A web page of customer sites where customer/clients fill in their
+              information
+            </p>
+            <button>View Project</button>
+          </article>
+
+          <article>
+            <h2>Website Clone</h2>
+            <p>
+              A website showing a clone of a shopping website with products and
+              columns and CSS.
+            </p>
+            <button>View Project</button>
+          </article>
+        </div>
+      </section>
+
+      <section>
+        <article>
+          <h1>Skills</h1>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Flexbox</li>
+            <li>Responsive design</li>
+            <li>CSS Grid</li>
+          </ul>
+        </article>
+      </section>
+
+      <form>
+        <fieldset>
+          <legend>Contact</legend>
+
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+          <button>Submit</button>
+
+          <br />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="username" required />
+          <button>Submit</button>
+
+          <br />
+
+          <label for="message">Message</label>
+          <textarea row="5" cols="5"></textarea>
+          <button>Send</button>
+        </fieldset>
+      </form>
+    </main>
+
+    <footer>
+      <ul>
+        <li>Instagram</li>
+        <li>Whatsapp</li>
+        <li>Gmail</li>
+        <li>&copy;Web developer</li>
+      </ul>
+    </footer>
+  </body>
+</html>
